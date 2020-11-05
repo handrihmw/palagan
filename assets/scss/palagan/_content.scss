@@ -1,0 +1,28 @@
+.container {
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+.all-section {
+    position: relative;
+
+    .btn {
+        margin: .313rem;
+    }
+}
+
+.color-section {
+    height: 200px;
+}

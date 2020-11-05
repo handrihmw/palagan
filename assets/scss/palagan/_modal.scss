@@ -1,0 +1,229 @@
+.signup-modal {
+    .modal-dialog {
+        max-width: 540px;
+    }
+
+    .modal-content {
+        padding: 32px 48px;
+        border: 1px solid #c4c4c4;
+        box-sizing: border-box;
+        box-shadow: 0px 6px 20px rgba(17, 26, 104, 0.2);
+        border-radius: 8px;
+        .alert-danger {
+        display: none;
+        background: rgba(255, 0, 0, 0.06);
+        border: 0;
+        color: #ff0000;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 16px 25px;
+        margin-top: 32px;
+        text-align: center;
+        }
+    }
+
+    &__title {
+        font-family: NunitoSansBold, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #3a4166;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba(58, 65, 102, 0.7);
+        &--show-login,
+        &--show-signup {
+        font-family: NunitoSansBold, sans-serif;
+        color: #007aff;
+        cursor: pointer;
+        text-decoration: underline;
+        }
+    }
+    
+    &__form {
+        margin: 32px 0;
+        .form-group {
+        min-height: 88px;
+        margin-bottom: 8px;
+    }
+
+    label {
+        font-family: NunitoSansBold, sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        color: #3a4166;
+        margin-bottom: 16px;
+        &.error {
+            font-family: NunitoSansRegular, sans-serif;
+            color: #ff0000;
+            margin-bottom: 0;
+            vertical-align: bottom;
+        }
+    }
+
+    .form-control {
+        font-family: NunitoSansRegular, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3a4166;
+        height: 32px;
+        border: 0 0 2px solid rgba(58, 65, 102, 0.3);
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-radius: 0;
+        padding: 0 0 8px;
+
+        &.error {
+            border-color: #ff0000;
+            &:focus {
+                border-color: #ff0000;
+            }
+        }
+
+        &::placeholder {
+            color: rgba(58, 65, 102, 0.4);
+        }
+
+        &:focus {
+            border-color: #007aff;
+            box-shadow: none;
+        }
+    }
+}
+
+    &__forgot-password {
+        text-align: right;
+        margin-top: 32px;
+
+        a {
+            font-family: NunitoSansBold, sans-serif;
+            color: #007aff;
+            font-size: 12px;
+            line-height: 16px;
+            text-decoration: underline;
+        }
+    }
+
+    &__step-2 {
+        display: none;
+    }
+
+    &__button {
+        @extend .nh-btn;
+        @include button-outline($orange);
+        @include button-bg($orange);
+        color: $white;
+        border-radius: .313rem;
+
+        &--loading {
+            background-color: #fb8c00;
+            border-radius: 4px;
+            bottom: 0;
+            display: none;
+            height: 48px;
+            left: 0;
+            line-height: 48px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        &--register,
+        &--login {
+            display: inline-block;
+            margin: 32px auto 0;
+            padding: .5rem 4rem;
+        }
+
+        &--google,
+        &--facebook {
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            padding: 12px 0;
+            text-transform: inherit;
+            border: 0;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &--google {
+            background-color: #db4437;
+            margin-bottom: 16px;
+            &:hover {
+                background-color: #ba2f22;
+            }
+        }
+
+        &--facebook {
+            background-color: #4267b2;
+            &:hover {
+                background-color: #35538f;
+            }
+        }
+        
+        @media only screen and (min-width: 400px) {
+            padding: 16px 27.5px;
+        }
+    }
+
+    &__persuasive {
+        display: block;
+        position: relative;
+        font-size: 12px;
+        text-align: center;
+        color: rgba(58, 65, 102, 0.7);
+        margin: 0 auto 32px;
+        width: 205px;
+        height: 24px;
+        line-height: 24px;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 72.5px;
+            height: 1px;
+            background-color: #e5e5e5;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+
+        &::before {
+            left: -72.5px;
+        }
+
+        &::after {
+            right: -72.5px;
+        }
+    }
+
+    @media only screen and (min-width: 400px) {
+        .modal-dialog {
+            margin: 0.5rem auto;
+        }
+    }
+
+    @media only screen and (min-width: 400px) {
+        .modal-content {
+            padding: 32px 20px 31.54px;
+        }
+
+    &__button {
+        &--register {
+            margin-top: 47.54px;
+        }
+    }
+    }
+}

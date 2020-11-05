@@ -1,0 +1,138 @@
+body {
+    &, .color, color:before, color:after {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+$grad-colors: (
+    'blue': (
+        'light': #1a87ff,
+        'base': #006ee6,
+        'dark': #0062cd
+    ),
+    'yellow': (
+        'light': #fbe527,
+        'base': #fbe20e,
+        'dark': #ecd304,
+    ),
+    'orange': (
+        'light': #ef825a,
+        'base': #ed7043,
+        'dark': #eb5e2c
+    ),
+    'red': (
+        'light': #df686c,
+        'base': #db5358,
+        'dark':#d73e44,
+    ),
+    'purple': (
+        'light': #871aff,
+        'base': #7a00ff,
+        'dark': #6e00e6,
+    ),
+    'white': (
+        'light': #ffffff,
+        'base': #f6fbff,
+        'dark': #ddf0ff,
+    ),
+    'green': (
+        'light': #00d9bb,
+        'base': #00bfa5,
+        'dark': #00a68f
+    ),
+    'gray': (
+        'light': #83889f,
+        'base': #757a94,
+        'dark': #696d87,
+    ),
+    'navy': (
+        'light':#434b76,
+        'base': #3a4166,
+        'dark': #3a4566,
+    ),
+    'black': (
+        'light': #3f474e,
+        'base': #343a40,
+        'dark': #292d32
+    )
+);
+
+$border-color: #cecece;
+
+$variant-height: 1.5rem;
+
+.palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.color {
+    width: calc(20% - 1rem);
+    height: 170px;
+    box-shadow: $btn-shadow;
+    display: block;
+    margin: 5px;
+
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid $border-color;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        font-size: 85%;
+        overflow: hidden;
+        word-wrap: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &:before {
+        background-color: white;
+        font-weight: bold;
+        border: 1px solid $border-color;
+    }
+
+    &:after {
+        padding-top: 1.5rem;
+        font-size: 70%;
+        color: gray;
+    }
+
+    @each $color-key, $color-variants in $grad-colors {
+        $base-color-value: map-get($color-variants, 'base');
+        &.#{$color-key} {
+            background-color: $base-color-value;
+            
+            &:before { content: "#{$color-key}"; }
+            &:after { content: "#{$base-color-value}"; }
+            
+            $variant-gradient: (unquote("to bottom"),);
+            
+            $index: 0;
+            @each $variant-name, $variant-value in $color-variants {
+                $variant-gradient: append($variant-gradient, $variant-value $index * $variant-height);
+                $index: $index + 1;
+                $variant-gradient: append($variant-gradient, $variant-value $index * $variant-height);
+            }
+            
+            .variants {
+                border-left: 2px solid white;
+                border-bottom: 2px solid white;
+                position: absolute;
+                height: $variant-height * length($color-variants);
+                width: $variant-height;
+                right: 0;
+                top: 0;
+                background: linear-gradient(#{$variant-gradient});
+            }
+        }
+    }
+}

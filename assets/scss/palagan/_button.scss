@@ -1,0 +1,181 @@
+.nh-btn {
+    @extend %type-base;
+    @include text-style;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    display: inline-block;
+    font-size: $font-size;
+    padding: .75rem 2.188rem !important;
+}
+
+.btn {
+    
+    &--primary#{&}--solid {
+        @include button-bg($blue);
+        background-color: $blue;
+        color: $white;
+    }
+    
+    &--secondary#{&}--solid {
+        @include button-bg($orange);
+        background-color: $orange;
+        color: $white;
+    }
+    
+    &--success#{&}--solid {
+        @include button-bg($green);
+        background-color: $green;
+        color: $white;
+    }
+    
+    &--danger#{&}--solid {
+        @include button-bg($red);
+        background-color: $red;
+        color: $white;
+    }
+    
+    &--dark#{&}--solid {
+        @include button-bg($black);
+        background-color: $black;
+        color: $white;
+    }
+    
+    &--default#{&}--solid {
+        @include button-bg($grey);
+        background-color: $grey;
+        color: $white;
+    }
+    
+    &--primary#{&}--pill {
+        @include button-pill($blue);
+        border-radius: 2em;
+        background-color: $blue;
+        color: $white;
+    }
+    
+    &--secondary#{&}--pill {
+        @include button-pill($orange);
+        border-radius: 2em;
+        background-color: $orange;
+        color: $white;
+    }
+    
+    &--success#{&}--pill {
+        @include button-pill($green);
+        border-radius: 2em;
+        background-color: $green;
+        color: $white;
+    }
+    
+    &--danger#{&}--pill {
+        @include button-pill($red);
+        border-radius: 2em;
+        background-color: $red;
+        color: $white;
+    }
+    
+    &--dark#{&}--pill {
+        @include button-pill($black);
+        border-radius: 2em;
+        background-color: $black;
+        color: $white;
+    }
+    
+    &--default#{&}--pill {
+        @include button-pill($grey);
+        border-radius: 2em;
+        background-color: $grey;
+        color: $white;
+    }
+        
+    &--primary#{&}--outline {
+        @include button-outline($blue);
+        border: 1px solid $blue;
+        color: $blue;
+    }
+    
+    &--secondary#{&}--outline {
+        @include button-outline($orange);
+        border: 1px solid $orange;
+        color: $orange;
+    }
+    
+    &--success#{&}--outline {
+        @include button-outline($green);
+        border: 1px solid $green;
+        color: $green;
+    }
+    
+    &--danger#{&}--outline {
+        @include button-outline($red);
+        border: 1px solid $red;
+        color: $red;
+    }
+    
+    &--dark#{&}--outline {
+        @include button-outline($black);
+        border: 1px solid $black;
+        color: $black;
+    }
+    
+    &--default#{&}--outline {
+        @include button-outline($grey);
+        border: 1px solid $grey;
+        color: $grey;
+    }
+    
+    &--icon#{&}--solid {
+        @include button-bg($grey);
+        background-color: $grey;
+        color: $white;
+        position: relative;
+        vertical-align: middle; 
+        text-align: center;
+        width: 2.575rem;
+        height: 2.575rem;
+        padding: .625rem;
+    }
+    
+    &--icon#{&}--pill {
+        @include button-pill($grey);
+        border-radius: 50%;
+        background-color: $grey;
+        color: $white;
+        position: relative;
+        vertical-align: middle; 
+        text-align: center;
+        width: 2.575rem;
+        height: 2.575rem;
+        padding: .625rem;
+    }
+    
+    &--icon#{&}--outline {
+        @include button-outline($grey);
+        background-color: transparent;
+        border: 2px solid $grey;
+        color: $grey;
+        position: relative;
+        vertical-align: middle; 
+        text-align: center;
+        width: 2.575rem;
+        height: 2.575rem;
+        padding: .625rem;
+    }
+}
+
+.btn-sm {
+    min-width: 6rem;
+    font-size: 0.875rem;
+    padding: .25rem 1rem;
+}
+
+.btn-md {
+    min-width: 8rem;
+    font-size: 1rem;
+    padding: .50rem 1.5rem;
+}
+
+.btn-lg {
+    min-width: 10rem;
+    font-size: 1.25rem;
+    padding: .75em 2.25em;
+}
