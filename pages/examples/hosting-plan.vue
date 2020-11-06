@@ -16,7 +16,7 @@
                         <div class="package__hr"></div>
                         <a
                         href="https://www.niagahoster.co.id/orderhosting/24"
-                        class="nh-btn nh-btn--orange no-gutters gtmProductView"
+                        class="btn nh-btn btn--secondary btn--solid text-uppercase font-weight-bold no-gutters gtmProductView"
                         data-product="Bayi"
                         data-label="Section Table Price"
                         >Pilih Sekarang</a>
@@ -140,7 +140,7 @@
                         <div class="package__hr"></div>
                         <a
                         href="https://www.niagahoster.co.id/orderhosting/25?period=3Y"
-                        class="nh-btn nh-btn--orange no-gutters gtmProductView"
+                        class="btn nh-btn btn--secondary btn--solid text-uppercase font-weight-bold no-gutters gtmProductView"
                         data-product="Pelajar"
                         data-label="Section Table Price"
                         >Pilih Sekarang</a>
@@ -294,7 +294,7 @@
                         <div class="package__hr"></div>
                         <a
                         href="https://www.niagahoster.co.id/orderhosting/26?period=3Y"
-                        class="nh-btn nh-btn--orange no-gutters gtmProductView"
+                        class="btn nh-btn btn--secondary btn--solid text-uppercase font-weight-bold no-gutters gtmProductView"
                         data-product="Personal"
                         data-label="Section Table Price"
                         >Pilih Sekarang</a>
@@ -459,7 +459,7 @@
                         <div class="package__hr"></div>
                         <a
                         href="https://www.niagahoster.co.id/orderhosting/27?period=3Y"
-                        class="nh-btn nh-btn--orange no-gutters gtmProductView"
+                        class="btn nh-btn btn--secondary btn--solid text-uppercase font-weight-bold no-gutters gtmProductView"
                         data-product="Bisnis"
                         data-label="Section Table Price"
                         >Pilih Sekarang</a>
