@@ -2,6 +2,7 @@
     <div>
         <LayNavbar />
         <nuxt />
+
     </div>
 </template>
 

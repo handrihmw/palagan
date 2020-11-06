@@ -13,7 +13,7 @@
                 </ul>
             </div>
 
-            <div class="all-section">
+            <div class="all-section mt-5">
                 <ul class="list-group">
                     <li class="list-group-item active">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -23,7 +23,7 @@
                 </ul>
             </div>
 
-            <div class="all-section">
+            <div class="all-section mt-5">
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Cras justo odio
@@ -40,7 +40,7 @@
                 </ul>
             </div>
 
-            <div class="all-section">
+            <div class="all-section mt-5">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action active">
                         <div class="d-flex w-100 justify-content-between">
@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="all-section">
+            <div class="all-section mt-5">
                 <div class="row">
                     <div class="col-4">
                         <div class="list-group" id="list-tab" role="tablist">

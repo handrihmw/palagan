@@ -1,6 +1,9 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Palagan Design System</a>
+        <a class="navbar-brand" href="/">
+            <img src="~/assets/img/logo.png" width="30" height="25" class="d-inline-block align-top mr-1" alt="logo" loading="lazy">
+            <b>Palagan UI</b>
+        </a>
         <button
             class="navbar-toggler"
             type="button"
@@ -24,9 +27,33 @@
                     <a class="nav-link" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank" aria-label="bootstrap">Documentation</a>
                 </li>
                 <li class="nav-item">
-                    <NuxtLink class="nav-link" to="/examples">
-                        Examples
+                    <NuxtLink
+                        class="nav-link nav-link-collapse"
+                        to="/"
+                        id="hasSubItems"
+                        data-toggle="collapse"
+                        data-target="#collExample"
+                        aria-controls="collExample"
+                        aria-expanded="false"
+                        > Examples
                     </NuxtLink>
+                    <ul class="nav-second-level collapse" id="collExample" data-parent="#navAccordion">
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/examples/hero-page">
+                                <span class="nav-link-text">Hero Page</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/examples/layanan">
+                                <span class="nav-link-text">Layanan</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/examples/hosting-plan">
+                                <span class="nav-link-text">Hosting Plan</span>
+                            </NuxtLink>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <NuxtLink class="nav-link" to="/about">
@@ -61,6 +88,11 @@
                 <li class="nav-item">
                     <NuxtLink class="nav-link" to="/card">
                         Card
+                    </NuxtLink>
+                </li>
+                <li class="nav-item">
+                    <NuxtLink class="nav-link" to="/color">
+                        Color
                     </NuxtLink>
                 </li>
                 <li class="nav-item">
@@ -164,14 +196,14 @@
 
     .nav-link-collapse:after {
         float: right;
-        content: '\f067';
-        font-family: 'FontAwesome';
+        content: '\f054';
+        font-family: 'Font Awesome 5';
     }
 
     .nav-link-show:after {
         float: right;
-        content: '\f068';
-        font-family: 'FontAwesome';
+        content: '\f078';
+        font-family: 'Font Awesome 5';
     }
 
     .nav-item ul.nav-second-level {
@@ -198,7 +230,7 @@
             box-sizing: border-box;
             border-top: 1px solid rgba(0, 0, 0, 0.3);
             overflow-y: auto;
-            overflow-x: hidden;
+            overflow-x: auto;
         }
 
         .navbar-expand-lg .sidenav {
