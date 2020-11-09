@@ -8,8 +8,7 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: 'https://nuxtjs.org/favicon.ico' },
-            { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" },
-            { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css' },
+            // { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" },
             { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' }
         ],
         script: [
@@ -20,14 +19,13 @@ export default {
     },
 
     css: [
-        { src: '~/assets/scss/main.scss', lang: 'scss' }
+        { src: '~/assets/scss/palagan.scss', lang: 'scss' }
     ],
 
-    plugins: [{
-        src: '~plugins/swiper.js', ssr: false,
-        src: '~/plugins/vuex-persist',
-        mode: 'client'
-    }],
+    plugins: [
+        '~/plugins/axios.js',
+        '~/plugins/vue-tooltip.js'
+    ],
 
     components: true,
     components: {
@@ -53,10 +51,12 @@ export default {
     ],
 
     modules: [
+        '@nuxtjs/axios',
         'bootstrap-vue/nuxt',
     ],
 
     build: {
+        transpile: ['vue-tooltip'],
         extend (config, ctx) {
             if (ctx.isDev && ctx.client) {
                 config.module.rules.push({

@@ -1,0 +1,21 @@
+.nh-bg {
+    &--blue {
+        background-color: $blue;
+    }
+
+    &--orange {
+        background-color: $orange;
+    }
+
+    &--green {
+        background-color: $green;
+    }
+
+    &--red {
+        background-color: $red;
+    }
+
+    &--black {
+        background-color: $black;
+    }
+}

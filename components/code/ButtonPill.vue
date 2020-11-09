@@ -1,14 +1,12 @@
 <template>
-    <div class="text-center">
-        <div class="card-code card-code-body text-left">
-            <h3>Button Pill</h3>
-            <code>
-                &lt;a class="btn nh-btn btn--primary btn--pill" href="javascript:void(0)">primary button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--secondary btn--pill" href="javascript:void(0)">secondary button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--success btn--pill" href="javascript:void(0)">success button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--danger btn--pill" href="javascript:void(0)">danger button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--dark btn--pill" href="javascript:void(0)">dark button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--default btn--pill" href="javascript:void(0)">default button&lt;/a&gt;
+    <div class="component-code">
+        <div class="component-item">
+            <code class="language-html" data-lang="html">
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--primary btn--pill text-uppercase font-weight-bold</span><span class="np">"&gt;</span><span class="nm">Primary</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--secondary btn--pill text-uppercase font-weight-bold"</span><span class="nt">&gt;</span><span class="nm">Secondary</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--success btn--pill text-uppercase font-weight-bold"</span><span class="nt">&gt;</span><span class="nm">Success</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--danger btn--pill text-uppercase font-weight-bold"</span><span class="nt">&gt;</span><span class="nm">Danger</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--dark btn--pill text-uppercase font-weight-bold"</span><span class="nt">&gt;</span><span class="nm">Dark</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span>
             </code>
         </div>
     </div>

@@ -24,7 +24,7 @@ $black: #343a40;
         display: inline-block;
         border-radius: 4px;
         position: relative;
-        
+
         &.blue {
             @include color-swatch($blue);
         }
@@ -48,19 +48,19 @@ $black: #343a40;
         &.white {
             @include color-swatch($white);
         }
-        
+
         &.green {
             @include color-swatch($green);
         }
-        
+
         &.gray {
             @include color-swatch($gray);
         }
-        
+
         &.navy {
             @include color-swatch($navy);
         }
-        
+
         &.black {
             @include color-swatch($black);
         }

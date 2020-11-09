@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
+@import"bootstrap/bootstrap";
 @import "bootstrap/mixins";
 @import "bootstrap/functions";
 
 @import "palagan/mixins/button";
 @import "palagan/mixins/color";
 
+@import "palagan/background";
 @import "palagan/button";
 @import "palagan/card";
 @import "palagan/code";

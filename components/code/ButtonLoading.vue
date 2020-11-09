@@ -1,14 +1,21 @@
 <template>
-    <div class="text-center">
-        <div class="card-code card-code-body text-left">
-            <h3>Button Outline</h3>
-            <code>
-                &lt;a class="btn nh-btn btn--primary btn--outline" href="javascript:void(0)">primary button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--secondary btn--outline" href="javascript:void(0)">secondary button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--success btn--outline" href="javascript:void(0)">success button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--danger btn--outline" href="javascript:void(0)">danger button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--dark btn--outline" href="javascript:void(0)">dark button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn--default btn--outline" href="javascript:void(0)">default button&lt;/a&gt;
+    <div class="component-code">
+        <div class="component-item">
+            <code class="language-html" data-lang="html">
+                <span class="np">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--default btn--solid</span><span class="np">"</span> <span class="na">href</span><span class="np">="</span><span class="s">javascript:void(0)</span><span class="np">"</span> <span class="na">disable</span><span class="np">="</span><span class="s">disabled</span><span class="np">"&gt;</span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">ml-1</span><span class="np">"&gt;</span> <span class="nm">Loading .... </span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">spinner-border spinner-border-sm</span><span class="np">"</span> <span class="na">role</span><span class="np">="</span><span class="s">status</span><span class="np">"</span> <span class="na">aria-hidden</span><span class="np">="</span><span class="s">true</span><span class="np">"&gt;</span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br><span class="np">&lt;/</span><span class="nt">a<span class="np">&gt;</span></span><br>
+
+                <span class="np">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--default btn--pill</span><span class="np">"</span> <span class="na">href</span><span class="np">="</span><span class="s">javascript:void(0)</span><span class="np">"</span> <span class="na">disable</span><span class="np">="</span><span class="s">disabled</span><span class="np">"&gt;</span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">ml-1</span><span class="np">"&gt;</span> <span class="nm">Loading .... </span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">spinner-border spinner-border-sm</span><span class="np">"</span> <span class="na">role</span><span class="np">="</span><span class="s">status</span><span class="np">"</span> <span class="na">aria-hidden</span><span class="np">="</span><span class="s">true</span><span class="np">"&gt;</span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br><span class="np">&lt;/</span><span class="nt">a<span class="np">&gt;</span></span><br>
+
+                <span class="np">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn--default btn--outline</span><span class="np">"</span> <span class="na">href</span><span class="np">="</span><span class="s">javascript:void(0)</span><span class="np">"</span> <span class="na">disable</span><span class="np">="</span><span class="s">disabled</span><span class="np">"&gt;</span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">ml-1</span><span class="np">"&gt;</span> <span class="nm">Loading .... </span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br>&nbsp;&nbsp;&nbsp;<span class="np">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="np">="</span><span class="s">spinner-border spinner-border-sm</span><span class="np">"</span> <span class="na">role</span><span class="np">="</span><span class="s">status</span><span class="np">"</span> <span class="na">aria-hidden</span><span class="np">="</span><span class="s">true</span><span class="np">"&gt;</span><span class="np">&lt;/</span><span class="nt">span<span class="np">&gt;</span></span>
+                <br><span class="np">&lt;/</span><span class="nt">a<span class="np">&gt;</span></span><br>
             </code>
         </div>
     </div>

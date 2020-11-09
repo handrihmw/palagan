@@ -1,11 +1,10 @@
 <template>
-    <div class="text-center">
-        <div class="card-code card-code-body text-left">
-            <h3>Button Size</h3>
-            <code>
-                &lt;a class="btn nh-btn btn-dark btn-sm" href="javascript:void(0)">small button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn-dark btn-md" href="javascript:void(0)">medium button&lt;/a&gt; <br>
-                &lt;a class="btn nh-btn btn-dark btn-lg" href="javascript:void(0)">large button&lt;/a&gt;
+    <div class="component-code">
+        <div class="component-item">
+            <code class="language-html" data-lang="html">
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn-dark btn--sm</span><span class="np">"&gt;</span><span class="nm">Smaall</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn-dark btn--md"</span><span class="nt">&gt;</span><span class="nm">Medium</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span><br>
+                <span class="np">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="np">="</span><span class="s">btn nh-btn btn-dark btn--lg"</span><span class="nt">&gt;</span><span class="nm">Large</span><span class="np">&lt;/</span><span class="nt">button<span class="np">&gt;</span></span>
             </code>
         </div>
     </div>
