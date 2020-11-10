@@ -20,7 +20,7 @@
                             <code>btn--primary</code>
                         </td>
                         <td>
-                            <span class="nh-bg--blue rounded text-white p-2">Blue #007aff</span>
+                            <span class="blue rounded text-white p-2">Blue</span>
                         </td>
                     </tr>
                     <tr>
@@ -31,7 +31,7 @@
                             <code>btn--secondary</code>
                         </td>
                         <td>
-                            <span class="nh-bg--orange rounded text-white p-2">Orange #fb8c00</span>
+                            <span class="orange rounded text-white p-2">Orange</span>
                         </td>
                     </tr>
                     <tr>
@@ -42,7 +42,7 @@
                             <code>btn--success</code>
                         </td>
                         <td>
-                            <span class="nh-bg--green rounded text-white text-wrap p-2">Green #00bfa5</span>
+                            <span class="green rounded text-white text-wrap p-2">Green</span>
                         </td>
                     </tr>
                     <tr>
@@ -53,7 +53,7 @@
                             <code>btn--danger</code>
                         </td>
                         <td>
-                            <span class="nh-bg--red rounded text-white p-2">Red #ee4957</span>
+                            <span class="red rounded text-white p-2">Red</span>
                         </td>
                     </tr>
                     <tr>
@@ -64,7 +64,18 @@
                             <code>btn--dark</code>
                         </td>
                         <td>
-                            <span class="nh-bg--black rounded text-white p-2">Black #343a40</span>
+                            <span class="black rounded text-white p-2">Black</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Default
+                        </td>
+                        <td>
+                            <code>btn--default</code>
+                        </td>
+                        <td>
+                            <span class="gray rounded text-white p-2">Gray</span>
                         </td>
                     </tr>
                 </tbody>
@@ -76,11 +87,11 @@
                     <div class="row">
                         <div class="component-preview">
                             <div class="component-item d-flex justify-content-center">
-                                <a class="btn nh-btn btn--primary btn--solid font-weight-bold" href="javascript:void(0)">primary button</a>
-                                <a class="btn nh-btn btn--secondary btn--solid font-weight-bold" href="javascript:void(0)">secondary button</a>
-                                <a class="btn nh-btn btn--success btn--solid font-weight-bold" href="javascript:void(0)">success button</a>
-                                <a class="btn nh-btn btn--danger btn--solid font-weight-bold" href="javascript:void(0)">danger button</a>
-                                <a class="btn nh-btn btn--dark btn--solid font-weight-bold" href="javascript:void(0)">dark button</a>
+                                <a class="btn nh-btn btn--primary btn--solid" href="javascript:void(0)">primary button</a>
+                                <a class="btn nh-btn btn--secondary btn--solid" href="javascript:void(0)">secondary button</a>
+                                <a class="btn nh-btn btn--success btn--solid" href="javascript:void(0)">success button</a>
+                                <a class="btn nh-btn btn--danger btn--solid" href="javascript:void(0)">danger button</a>
+                                <a class="btn nh-btn btn--dark btn--solid" href="javascript:void(0)">dark button</a>
                             </div>
                         </div>
 
@@ -96,11 +107,11 @@
                     <div class="row">
                         <div class="component-preview">
                             <div class="component-item d-flex justify-content-center">
-                                <a class="btn nh-btn btn--primary btn--pill font-weight-bold" href="javascript:void(0)">primary button</a>
-                                <a class="btn nh-btn btn--secondary btn--pill font-weight-bold" href="javascript:void(0)">secondary button</a>
-                                <a class="btn nh-btn btn--success btn--pill font-weight-bold" href="javascript:void(0)">success button</a>
-                                <a class="btn nh-btn btn--danger btn--pill font-weight-bold" href="javascript:void(0)">danger button</a>
-                                <a class="btn nh-btn btn--dark btn--pill font-weight-bold" href="javascript:void(0)">dark button</a>
+                                <a class="btn nh-btn btn--primary btn--pill" href="javascript:void(0)">primary button</a>
+                                <a class="btn nh-btn btn--secondary btn--pill" href="javascript:void(0)">secondary button</a>
+                                <a class="btn nh-btn btn--success btn--pill" href="javascript:void(0)">success button</a>
+                                <a class="btn nh-btn btn--danger btn--pill" href="javascript:void(0)">danger button</a>
+                                <a class="btn nh-btn btn--dark btn--pill" href="javascript:void(0)">dark button</a>
                             </div>
                         </div>
 
@@ -116,11 +127,11 @@
                     <div class="row">
                         <div class="component-preview">
                             <div class="component-item d-flex justify-content-center">
-                                <a class="btn nh-btn btn--primary btn--outline font-weight-bold" href="javascript:void(0)">primary button</a>
-                                <a class="btn nh-btn btn--secondary btn--outline font-weight-bold" href="javascript:void(0)">secondary button</a>
-                                <a class="btn nh-btn btn--success btn--outline font-weight-bold" href="javascript:void(0)">success button</a>
-                                <a class="btn nh-btn btn--danger btn--outline font-weight-bold" href="javascript:void(0)">danger button</a>
-                                <a class="btn nh-btn btn--dark btn--outline font-weight-bold" href="javascript:void(0)">dark button</a>
+                                <a class="btn nh-btn btn--primary btn--outline" href="javascript:void(0)">primary button</a>
+                                <a class="btn nh-btn btn--secondary btn--outline" href="javascript:void(0)">secondary button</a>
+                                <a class="btn nh-btn btn--success btn--outline" href="javascript:void(0)">success button</a>
+                                <a class="btn nh-btn btn--danger btn--outline" href="javascript:void(0)">danger button</a>
+                                <a class="btn nh-btn btn--dark btn--outline" href="javascript:void(0)">dark button</a>
                             </div>
                         </div>
 

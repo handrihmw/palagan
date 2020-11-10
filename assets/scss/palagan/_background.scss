@@ -1,21 +1,14 @@
-.nh-bg {
-    &--blue {
-        background-color: $blue;
-    }
+$colors: (
+    "blue": $blue,
+    "orange": $orange,
+    "green": $green,
+    "red": $red,
+    "black": $black,
+    "gray": $gray
+) !default;
 
-    &--orange {
-        background-color: $orange;
-    }
-
-    &--green {
-        background-color: $green;
-    }
-
-    &--red {
-        background-color: $red;
-    }
-
-    &--black {
-        background-color: $black;
+@each $color, $value in $colors {
+    .bg--#{$color} {
+        background: $value;
     }
 }

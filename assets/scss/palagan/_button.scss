@@ -39,8 +39,8 @@
     }
 
     &--default#{&}--solid {
-        @include button-bg($grey);
-        background-color: $grey;
+        @include button-bg($gray);
+        background-color: $gray;
         color: $white;
     }
 
@@ -80,9 +80,9 @@
     }
 
     &--default#{&}--pill {
-        @include button-pill($grey);
+        @include button-pill($gray);
         border-radius: 2em;
-        background-color: $grey;
+        background-color: $gray;
         color: $white;
     }
 
@@ -117,14 +117,14 @@
     }
 
     &--default#{&}--outline {
-        @include button-outline($grey);
-        border: 1px solid $grey;
-        color: $grey;
+        @include button-outline($gray);
+        border: 1px solid $gray;
+        color: $gray;
     }
 
     &--icon#{&}--solid {
-        @include button-bg($grey);
-        background-color: $grey;
+        @include button-bg($gray);
+        background-color: $gray;
         color: $white;
         position: relative;
         vertical-align: middle;
@@ -135,9 +135,9 @@
     }
 
     &--icon#{&}--pill {
-        @include button-pill($grey);
+        @include button-pill($gray);
         border-radius: 50%;
-        background-color: $grey;
+        background-color: $gray;
         color: $white;
         position: relative;
         vertical-align: middle;
@@ -148,10 +148,10 @@
     }
 
     &--icon#{&}--outline {
-        @include button-outline($grey);
+        @include button-outline($gray);
         background-color: transparent;
-        border: 2px solid $grey;
-        color: $grey;
+        border: 2px solid $gray;
+        color: $gray;
         position: relative;
         vertical-align: middle;
         text-align: center;

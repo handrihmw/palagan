@@ -4,34 +4,48 @@
             <h1 class="display-1 text-left mt-5">Color</h1>
             <p class="bd-lead mb-5">Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
             <div class="all-section">
-                <div class="row palette">
-                    <div class="color blue"><div class="variants"></div></div>
-                    <div class="color purple"><div class="variants"></div></div>
-                    <div class="color yellow"><div class="variants"></div></div>
-                    <div class="color orange"><div class="variants"></div></div>
-                    <div class="color red"><div class="variants"></div></div>
-                    <div class="color white"><div class="variants"></div></div>
-                    <div class="color green"><div class="variants"></div></div>
-                    <div class="color gray"><div class="variants"></div></div>
-                    <div class="color navy"><div class="variants"></div></div>
-                    <div class="color black"><div class="variants"></div></div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="all-section mt-5 text-center">
-                <div class="color-palette">
-                    <div class="palette blue" data-clipboard-text='#006ee6' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette purple" data-clipboard-text='#7a00ff' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette yellow" data-clipboard-text='#fbe20e' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette orange" data-clipboard-text='#ed7043' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette red" data-clipboard-text='#db5358' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette white" data-clipboard-text='#f6fbff' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette green" data-clipboard-text='#00bfa5' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette gray" data-clipboard-text='#757a94' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette navy" data-clipboard-text='#3a4166' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                    <div class="palette black" data-clipboard-text='#343a40' data-toggle="tooltip" data-placement="bottom" title="Click to Copy!"></div>
-                </div>
+                <figure class="colors text-white">
+                    <div class="blue">
+                        blue
+                        <span>#007aff</span>
+                        <span>rgb(0, 122, 255)</span>
+                    </div>
+                    <div class="orange">
+                        orange
+                        <span>#fb8c00</span>
+                        <span>rgb(251, 140, 0)</span>
+                    </div>
+                    <div class="green">
+                        green
+                        <span>#00bfa5</span>
+                        <span>rgb(0, 191, 165)</span>
+                    </div>
+                    <div class="red">
+                        red
+                        <span>#ee4957</span>
+                        <span>rgb(238, 73, 87)</span>
+                    </div>
+                    <div class="white text-black-50">
+                        white
+                        <span>#ffffff</span>
+                        <span>rgb(255, 255, 255)</span>
+                    </div>
+                    <div class="gray">
+                        gray
+                        <span>#6c757d</span>
+                        <span>rgb(108, 117, 125)</span>
+                    </div>
+                    <div class="violet">
+                        violet
+                        <span>#5831cc</span>
+                        <span>rgb(88, 49, 204)</span>
+                    </div>
+                    <div class="black">
+                        black
+                        <span>#343a40</span>
+                        <span>rgb(52, 58, 64)</span>
+                    </div>
+                </figure>
             </div>
         </div>
     </div>
