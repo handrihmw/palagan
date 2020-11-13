@@ -1,12 +1,26 @@
+$soft-colors: (
+    blue: #1a87ff,
+    green: #25cab0,
+    orange: #ff9717,
+    red: #f8535f,
+);
+
 $colors: (
+    black: #242238,
     blue: #007aff,
-    orange: #fb8c00,
+    gray: #919191,
     green: #00bfa5,
+    orange: #fb8c00,
     red: #ee4957,
-    black: #343a40,
-    white: #ffffff,
-    gray: #6c757d,
     violet: #5831cc,
+    white: #ffffff,
+);
+
+$dark-colors: (
+    blue: #006ee6,
+    green: #00b49a,
+    orange: #ee8100,
+    red: #e43f4f,
 );
 
 @function color($key) {
@@ -22,27 +36,199 @@ $colors: (
 	color: black;
 	display: flex;
 	flex-flow: row wrap;
-	margin: 4rem 0;
 	> div {
-		box-shadow: $btn-shadow;
+        border-radius: .5em;
+		box-shadow: 0 5px 10px #0002;
 		flex: 1;
-		font-size: 1.8rem;
+		font-size: 1.4em;
 		font-weight: 100;
 		margin: 5px;
-		min-width: 12rem;
+        min-width: 12rem;
 		padding: .8em;
 		text-align: center;
 	}
 	span {
 		display: block;
 		font-family: Source Code Pro ExtraLight;
-		font-size: 1rem;
+        font-size: 1rem;
 		margin-top: .4rem;
+    }
+}
+
+.tint {
+	color: black;
+	display: flex;
+	flex-flow: row wrap;
+	> div {
+		flex: 1;
+		font-size: 1.4em;
+		font-weight: 100;
+        min-width: 12rem;
+		padding: .8em;
+		text-align: center;
 	}
+	span {
+		display: block;
+		font-family: Source Code Pro ExtraLight;
+        font-size: 1rem;
+		margin-top: .4rem;
+    }
+}
+
+.monochromatic {
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px #0002;
+
+    &__red {
+        &--10 {
+            background-color: #ffe6ea;
+            color: black;
+
+            &:first-child {
+                border-top-right-radius: 1em;
+                border-top-left-radius: 1em;
+            }
+        }
+        &--20 {
+            background-color: #fecbca;
+            color: black;
+        }
+        &--30 {
+            background-color: #fba299;
+            color: black;
+        }
+        &--40 {
+            background-color: #f6877e;
+            color: black;
+        }
+        &--50 {
+            background-color: #f16c62;
+            color: white;
+        }
+        &--60 {
+            background-color: #e25458;
+            color: white;
+        }
+        &--70 {
+            background-color: #c52544;
+            color: white;
+        }
+        &--80 {
+            background-color: #97001d;
+            color: white;
+
+            &:last-child {
+                border-bottom-right-radius: 1em;
+                border-bottom-left-radius: 1em;
+            }
+        }
+    }
+
+    &__green {
+        &--10 {
+            background-color: #d8fce8;
+            color: black;
+
+            &:first-child {
+                border-top-right-radius: 1em;
+                border-top-left-radius: 1em;
+            }
+        }
+        &--20 {
+            background-color: #a7f1c8;
+            color: black;
+        }
+        &--30 {
+            background-color: #76e5a7;
+            color: black;
+        }
+        &--40 {
+            background-color: #45da87;
+            color: black;
+        }
+        &--50 {
+            background-color: #13ce66;
+            color: white;
+        }
+        &--60 {
+            background-color: #11b55a;
+            color: white;
+        }
+        &--70 {
+            background-color: #0f9c4d;
+            color: white;
+        }
+        &--80 {
+            background-color:#0a6a34;
+            color: white;
+
+            &:last-child {
+                border-bottom-right-radius: 1em;
+                border-bottom-left-radius: 1em;
+            }
+        }
+    }
+
+    &__blue {
+        &--10 {
+            background-color: #edf4ff;
+            color: black;
+
+            &:first-child {
+                border-top-right-radius: 1em;
+                border-top-left-radius: 1em;
+            }
+        }
+        &--20 {
+            background-color: #c9deff;
+            color: black;
+        }
+        &--30 {
+            background-color: #97c1ff;
+            color: black;
+        }
+        &--40 {
+            background-color: #6ea6ff;
+            color: black;
+        }
+        &--50 {
+            background-color: #418cff;
+            color: white;
+        }
+        &--60 {
+            background-color: #007aff;
+            color: white;
+        }
+        &--70 {
+            background-color: #004ada;
+            color: white;
+        }
+        &--80 {
+            background-color:#0030ad;
+            color: white;
+
+            &:last-child {
+                border-bottom-right-radius: 1em;
+                border-bottom-left-radius: 1em;
+            }
+        }
+    }
+}
+
+@each $soft-color, $value in $soft-colors {
+    .soft-#{$soft-color} {
+        background: $value;
+    }
 }
 
 @each $color, $value in $colors {
     .#{$color} {
+        background: $value;
+    }
+}
+
+@each $dark-color, $value in $dark-colors {
+    .dark-#{$dark-color} {
         background: $value;
     }
 }

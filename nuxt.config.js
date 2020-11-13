@@ -24,7 +24,7 @@ export default {
 
     plugins: [
         '~/plugins/axios.js',
-        '~/plugins/vue-tooltip.js'
+        '~/plugins/vue-tooltip.js',
     ],
 
     components: true,
