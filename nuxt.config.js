@@ -1,26 +1,46 @@
 export default {
     head: {
         title: 'Palagan Design System',
-        meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Palagan Design System' }
+        meta: [{
+                charset: 'utf-8'
+            },
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1'
+            },
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Palagan Design System'
+            }
         ],
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: 'https://nuxtjs.org/favicon.ico' },
-            // { rel: "stylesheet", type: "text/css", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" },
-            { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' }
+        link: [{
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: 'https://nuxtjs.org/favicon.ico'
+            },
+            {
+                rel: 'stylesheet',
+                type: 'text/css',
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'
+            }
         ],
-        script: [
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' },
-            { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
-            { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
+        script: [{
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js'
+            },
+            {
+                src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js'
+            },
+            {
+                src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
+            }
         ]
     },
 
-    css: [
-        { src: '~/assets/scss/palagan.scss', lang: 'scss' }
-    ],
+    css: [{
+        src: '~/assets/scss/palagan.scss',
+        lang: 'scss'
+    }],
 
     plugins: [
         '~/plugins/axios.js',
@@ -57,38 +77,46 @@ export default {
 
     build: {
         transpile: ['vue-tooltip'],
-        extend (config, ctx) {
+        extend(config, ctx) {
             if (ctx.isDev && ctx.client) {
                 config.module.rules.push({
-                enforce: 'pre',
-                test: /\.(js|vue)$/,
-                loader: 'eslint-loader',
-                exclude: /(node_modules)/
+                    enforce: 'pre',
+                    test: /\.(js|vue)$/,
+                    loader: 'eslint-loader',
+                    exclude: /(node_modules)/
                 })
 
                 const vueLoader = config.module.rules.find(
-                ({loader}) => loader === 'vue-loader')
-                const { options: {loaders} } = vueLoader || { options: {} }
-                if (loaders) {
-                for (const loader of Object.values(loaders)) {
-                    changeLoaderOptions(Array.isArray(loader) ? loader : [loader])
+                    ({
+                        loader
+                    }) => loader === 'vue-loader')
+                const {
+                    options: {
+                        loaders
+                    }
+                } = vueLoader || {
+                    options: {}
                 }
+                if (loaders) {
+                    for (const loader of Object.values(loaders)) {
+                        changeLoaderOptions(Array.isArray(loader) ? loader : [loader])
+                    }
                 }
                 config.module.rules.forEach(rule => changeLoaderOptions(rule.use))
-                }
-            },
-            extend(config, ctx) {}
+            }
         },
-    }
+        extend(config, ctx) {}
+    },
+}
 
-    function changeLoaderOptions (loaders) {
+function changeLoaderOptions(loaders) {
     if (loaders) {
         for (const loader of loaders) {
-        if (loader.loader === 'sass-loader') {
-            Object.assign(loader.options, {
-            includePaths: ['./assets'],
-            })
-        }
+            if (loader.loader === 'sass-loader') {
+                Object.assign(loader.options, {
+                    includePaths: ['./assets'],
+                })
+            }
         }
     }
 }

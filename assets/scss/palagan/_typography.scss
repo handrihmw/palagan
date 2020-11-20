@@ -1,0 +1,191 @@
+$font-ems: 0.0625em;
+
+@mixin font-size($font : 16) {
+    font-size: $font * $font-ems;
+}
+.font {
+    // Font Family
+    &-nunito {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    &-roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &-sans {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    &-serif {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+
+    &-mono {
+        font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    }
+
+    &-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    // Font Style
+    &-italic {
+        font-style: italic;
+    }
+
+    &-normal {
+        font-style: normal;
+    }
+
+    // Font Weight
+    &-hairline {
+        font-weight: 100;
+    }
+
+    &-thin {
+        font-weight: 200;
+    }
+
+    &-light {
+        font-weight: 300;
+    }
+
+    &-normal {
+        font-weight: 400;
+    }
+
+    &-medium {
+        font-weight: 500;
+    }
+
+    &-semibold {
+        font-weight: 600;
+    }
+
+    &-bold {
+        font-weight: 700;
+    }
+
+    &-extrabold {
+        font-weight: 800;
+    }
+
+    &-black {
+        font-weight: 900;
+    }
+}
+
+// Font Size
+.text-xs {
+    @include font-size(12);
+}
+
+.text-sm {
+    @include font-size(14);
+}
+
+.text-base {
+    @include font-size(16);
+}
+
+.text-lg {
+    @include font-size(18);
+}
+
+.text-xl {
+    @include font-size(20);
+}
+
+.text-2xl {
+    @include font-size(22);
+}
+
+.text-3xl {
+    @include font-size(24);
+}
+
+.text-4xl {
+    @include font-size(26);
+}
+
+.text-5xl {
+    @include font-size(28);
+}
+
+.text-6xl {
+    @include font-size(30);
+}
+
+// Whitespace
+.whitespace {
+    &-normal {
+        white-space: normal;
+    }
+
+    &-no-wrap {
+        white-space: nowrap;
+    }
+
+    &-pre {
+        white-space: pre;
+    }
+
+    &-pre-line {
+        white-space: pre-line;
+    }
+
+    &-pre-wrap {
+        white-space: pre-wrap;
+    }
+}
+
+// Letter Spacing
+.ls {
+    &-tighter {
+        letter-spacing: -0.05em;
+    }
+
+    &-tight {
+        letter-spacing: -0.025em;
+    }
+
+    &-normal {
+        letter-spacing: 0;
+    }
+
+    &-wide {
+        letter-spacing: 0.025em;
+    }
+
+    &-wider {
+        letter-spacing: 0.05em;
+    }
+
+    &-widest {
+        letter-spacing: 0.1em;
+    }
+}
+
+// List Style
+.list {
+    &-none {
+        list-style-type: none;
+    }
+
+    &-disc {
+        list-style-type: dsc;
+    }
+
+    &-decimal {
+        list-style-type: decimal;
+    }
+
+    &-inside {
+        list-style-position: inside;
+    }
+
+    &-outside {
+        list-style-position: outside;
+    }
+}
