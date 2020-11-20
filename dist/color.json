@@ -1,0 +1,176 @@
+{
+    "red": [
+        {
+            "color": "red--10",
+            "percent": "Red 10%",
+            "cmyk": "0, 11, 2, 0",
+            "rgb": "255, 230, 234",
+            "hex": "#ffe6ea"
+        },
+        {
+            "color": "red--20",
+            "percent": "Red 20%",
+            "cmyk": "0, 24, 12, 0",
+            "rgb": "254, 203, 202",
+            "hex": "#fecbca"
+        },
+        {
+            "color": "red--30",
+            "percent": "Red 30%",
+            "cmyk": "0, 45, 31, 0",
+            "rgb": "251, 162, 153",
+            "hex": "#fba299"
+        },
+        {
+            "color": "red--40",
+            "percent": "Red 40%",
+            "cmyk": "0, 58, 42, 0",
+            "rgb": "246, 135, 126",
+            "hex": "#f6877e"
+        },
+        {
+            "color": "red--50",
+            "percent": "Red 50%",
+            "cmyk": "0, 72, 58, 0",
+            "rgb": "241, 108, 98",
+            "hex": "#f16c62"
+        },
+        {
+            "color": "red--60",
+            "percent": "Red 60%",
+            "cmyk": "5, 83, 62, 0",
+            "rgb": "226, 84, 88",
+            "hex": "#e25458"
+        },
+        {
+            "color": "red--70",
+            "percent": "Red 70%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "0, 122, 125",
+            "hex": "#c52544"
+        },
+        {
+            "color": "red--80",
+            "percent": "Red 80%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "151, 0, 29",
+            "hex": "#97001d"
+        }
+    ],
+    "green": [
+        {
+            "color": "green--10",
+            "percent": "Green 10%",
+            "cmyk": "0, 11, 2, 0",
+            "rgb": "255, 230, 234",
+            "hex": "#ffe6ea"
+        },
+        {
+            "color": "green--20",
+            "percent": "Green 20%",
+            "cmyk": "0, 24, 12, 0",
+            "rgb": "254, 203, 202",
+            "hex": "#fecbca"
+        },
+        {
+            "color": "green--30",
+            "percent": "Green 30%",
+            "cmyk": "0, 45, 31, 0",
+            "rgb": "251, 162, 153",
+            "hex": "#fba299"
+        },
+        {
+            "color": "green--40",
+            "percent": "Green 40%",
+            "cmyk": "0, 58, 42, 0",
+            "rgb": "246, 135, 126",
+            "hex": "#f6877e"
+        },
+        {
+            "color": "green--50",
+            "percent": "Green 50%",
+            "cmyk": "0, 72, 58, 0",
+            "rgb": "241, 108, 98",
+            "hex": "#f16c62"
+        },
+        {
+            "color": "green--60",
+            "percent": "Green 60%",
+            "cmyk": "5, 83, 62, 0",
+            "rgb": "226, 84, 88",
+            "hex": "#e25458"
+        },
+        {
+            "color": "green--70",
+            "percent": "Green 70%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "0, 122, 125",
+            "hex": "#c52544"
+        },
+        {
+            "color": "green--80",
+            "percent": "Green 80%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "151, 0, 29",
+            "hex": "#97001d"
+        }
+    ],
+    "blue": [
+        {
+            "color": "blue--10",
+            "percent": "Blue 10%",
+            "cmyk": "0, 11, 2, 0",
+            "rgb": "255, 230, 234",
+            "hex": "#ffe6ea"
+        },
+        {
+            "color": "blue--20",
+            "percent": "Blue 20%",
+            "cmyk": "0, 24, 12, 0",
+            "rgb": "254, 203, 202",
+            "hex": "#fecbca"
+        },
+        {
+            "color": "blue--30",
+            "percent": "Blue 30%",
+            "cmyk": "0, 45, 31, 0",
+            "rgb": "251, 162, 153",
+            "hex": "#fba299"
+        },
+        {
+            "color": "blue--40",
+            "percent": "Blue 40%",
+            "cmyk": "0, 58, 42, 0",
+            "rgb": "246, 135, 126",
+            "hex": "#f6877e"
+        },
+        {
+            "color": "blue--50",
+            "percent": "Blue 50%",
+            "cmyk": "0, 72, 58, 0",
+            "rgb": "241, 108, 98",
+            "hex": "#f16c62"
+        },
+        {
+            "color": "blue--60",
+            "percent": "Blue 60%",
+            "cmyk": "5, 83, 62, 0",
+            "rgb": "226, 84, 88",
+            "hex": "#e25458"
+        },
+        {
+            "color": "blue--70",
+            "percent": "Blue 70%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "0, 122, 125",
+            "hex": "#c52544"
+        },
+        {
+            "color": "blue--80",
+            "percent": "Blue 80%",
+            "cmyk": "25, 100, 96, 24",
+            "rgb": "151, 0, 29",
+            "hex": "#97001d"
+        }
+    ]
+}
